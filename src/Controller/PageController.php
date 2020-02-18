@@ -38,4 +38,12 @@ class PageController extends AbstractController
     {
         return $this->render("page/contact.html.twig", []);
     }
+
+    /**
+     * @Route("/how", name="page.how")
+     */
+    public function howItWork()
+    {
+        return $this->render("page/how-it-work.html.twig", []);
+    }
 }
